@@ -77,91 +77,110 @@
 
           <fieldset>
             <legend>Стоимость в сутки (р)</legend>
-            <p>от 0 до 3000</p>
+            <div>
+              <input type="number" id="min-price" name="min-price" placeholder="От 0">
+              <input type="number" id="max-price" name="max-price" placeholder="До 3000">
+            </div>
             <input type="range" min="0" max="5000" step="1" value="3000" id="range" name="range">
-            <button type="submit">Показать</button>
           </fieldset>
-
+          <button type="submit">Показать</button>
         </form>
       </section>
-      <h2>Результат поиска гостиницы</h2>
+
       <section>
+        <h2>Результат поиска гостиницы</h2>
         <div>
-          <p>Найдено: 3</p>
+          <h3>Найдено: 3</h3>
           <p>Сортировка:</p>
           <ul>
             <li>
-              <a>по цене</a>
+              <a href="#">по цене</a>
               <!--Не уверен, что это должны быть ссылки-->
             </li>
             <li>
-              <a>по типу</a>
+              <a href="#">по типу</a>
             </li>
             <li>
-              <a>по рейтингу</a>
+              <a href="#">по рейтингу</a>
             </li>
           </ul>
-          <!-- svg иконки -->
-          <svg></svg>
-          <svg></svg>
+          <div>
+            <button>Вверх</button>
+            <button>Вниз</button>
+          </div>
         </div>
 
         <div>
+          <h3>Найденные варианты</h3>
+          <ul>
 
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/135x90" alt="Amara Resort & SPA">
-              <h3>Amara Resort & Spa</h3>
-              <p>Гостиница</p> <!-- Можно через таблицу сделать, но не понимаю, надо ли -->
-              <p>от 4000 Р.</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-            </div>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/135x90" alt="Amara Resort & SPA">
+              </div>
+              <div>
+                <h3><a href="#">Amara Resort & Spa</a></h3>
+                <p>Гостиница</p> <!-- Можно через таблицу сделать, но не понимаю, надо ли -->
+                <p>от 4000 Р.</p>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+              </div>
 
-            <div>
-              <svg></svg>
-              <svg></svg>
-              <svg></svg>
-              <svg></svg>
-              <p>Рейтинг: 8,5</p>
-            </div>
-          </div>
+              <div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <p>Рейтинг: 8,5</p>
+              </div>
+            </li>
 
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
-              <h3>Desert Quail Inn</h3>
-              <p>Мотель</p>
-              <p>от 3000 Р.</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-            </div>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
+              </div>
+              <div>
+                <h3><a href="#">Desert Quail Inn</a></h3>
+                <p>Мотель</p>
+                <p>от 3000 Р.</p>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+              </div>
 
-            <div>
-              <svg></svg>
-              <svg></svg>
-              <svg></svg>
-              <p>Рейтинг: 8,5</p>
-            </div>
-          </div>
+              <div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <p>Рейтинг: 8,9</p>
+              </div>
+            </li>
 
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
-              <h3>Villas at Poco Diablo</h3>
-              <p>Апартаменты</p>
-              <p>от 2000 Р.</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-            </div>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
+              </div>
+              <div>
+                <h3><a href="#">Villas at Poco Diablo</a></h3>
+                <p>Апартаменты</p>
+                <p>от 2000 Р.</p>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+              </div>
 
-            <div>
-              <svg></svg>
-              <svg></svg>
-              <p>Рейтинг: 8,5</p>
-            </div>
-          </div>
+              <div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <p>Рейтинг: 9,2</p>
+              </div>
+            </li>
 
+          </ul>
         </div>
       </section>
     </main>
