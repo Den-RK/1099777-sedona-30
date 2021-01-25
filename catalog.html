@@ -78,10 +78,20 @@
           <fieldset>
             <legend>Стоимость в сутки (р)</legend>
             <div>
-              <input type="number" id="min-price" name="min-price" placeholder="От 0">
-              <input type="number" id="max-price" name="max-price" placeholder="До 3000">
+              <div>
+                <label for="min-price">От</label>
+                <input type="number" id="min-price" name="min-price" value="0">
+              </div>
+
+              <div>
+                <label for="max-price">До</label>
+                <input type="number" id="max-price" name="max-price" value="3000">
+              </div>
+
+              <div>
+                <input type="range" min="0" max="5000" step="1" value="3000" id="range" name="range">
+              </div>
             </div>
-            <input type="range" min="0" max="5000" step="1" value="3000" id="range" name="range">
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -95,7 +105,6 @@
           <ul>
             <li>
               <a href="#">по цене</a>
-              <!--Не уверен, что это должны быть ссылки-->
             </li>
             <li>
               <a href="#">по типу</a>
@@ -113,17 +122,21 @@
         <div>
           <h3>Найденные варианты</h3>
           <ul>
-
             <li>
               <div>
                 <img src="https://via.placeholder.com/135x90" alt="Amara Resort & SPA">
               </div>
+
+              <a href="#">
+                <h3>Amara Resort & Spa</h3>
+              </a>
               <div>
-                <h3><a href="#">Amara Resort & Spa</a></h3>
-                <p>Гостиница</p> <!-- Можно через таблицу сделать, но не понимаю, надо ли -->
+                <p>Гостиница</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div>
                 <p>от 4000 Р.</p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
+                <a href="#">Забронировать</a>
               </div>
 
               <div>
@@ -141,12 +154,17 @@
               <div>
                 <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
               </div>
+
+              <a href="#">
+                <h3><a href="#">Desert Quail Inn</h3>
+              </a>
               <div>
-                <h3><a href="#">Desert Quail Inn</a></h3>
                 <p>Мотель</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div>
                 <p>от 3000 Р.</p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
+                <a href="#">Забронировать</a>
               </div>
 
               <div>
@@ -163,12 +181,17 @@
               <div>
                 <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
               </div>
+
+              <a href="#">
+                <h3>Villas at Poco Diablo</h3>
+              </a>
               <div>
-                <h3><a href="#">Villas at Poco Diablo</a></h3>
                 <p>Апартаменты</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div>
                 <p>от 2000 Р.</p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
+                <a href="#">Забронировать</a>
               </div>
 
               <div>
@@ -179,7 +202,6 @@
                 <p>Рейтинг: 9,2</p>
               </div>
             </li>
-
           </ul>
         </div>
       </section>
@@ -206,7 +228,6 @@
             <a href="#">Youtube</a>
           </li>
         </ul>
-
       </section>
 
       <section>
