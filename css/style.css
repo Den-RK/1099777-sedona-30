@@ -1,0 +1,156 @@
+/* Variables */
+
+:root {
+  --content-blue: #81B3D2;
+  --text-black: #333333;
+  --title-black: #000000;
+  --white: #fff;
+  --back-gray: #EEEEEE;
+  --brown: #766357;
+  --content-blue-hover: #669EC0;
+  --content-blue-active: #5496BD;
+  --active-gray: #BDBBBC;
+}
+
+/* Global */
+
+.page-body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-black);
+  text-transform: uppercase;
+  background-color: var(--white);
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+
+.navigation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--title-black);
+}
+
+.nav-link:hover,
+.nav.link:focus {
+  color: var(--content-blue);
+}
+
+.nav-link:active {
+  color: var(--title-black);
+  opacity: 0.3;
+}
+
+/* background */
+
+.main-background {
+  width: 1200px;
+  height: 509px;
+  background-color: #81B3D3;
+  background-image: url(../img/background-sedona.jpg);
+}
+
+.main-desc-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-desc-text {
+  line-height: 26px;
+}
+
+/* features */
+
+.block-item {
+  background-color: var(--content-blue);
+  color: var(--white);
+}
+
+.block-img-right,
+.block-img-left {
+  min-width:800px;
+  min-height: 256px;
+  background-color: var(--content-blue);
+}
+.item-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-background {
+  background-color: var(--back-gray);
+}
+
+/* purchase */
+
+.purchase {
+  line-height: 24px;
+}
+.purchase-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* footer */
+
+.contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.contacts-link {
+  text-decoration: none;
+  color: var(--title-black);
+}
+
+.social-btn {
+  background-color: var(--content-blue);
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: var(--content-blue-hover);
+}
+
+.social-btn:active {
+  background-color: var(--content-blue-active);
+}  
+
+.social-icon:active {
+  opacity: 0.3;
+}  
+
+.developer {
+  line-height: 26px;
+}
+
+.footer-logo-icon {
+  fill: #231F20;
+}
+.footer-logo-icon:hover{
+  fill: var(--content-blue);
+}
+
+.footer-logo-icon:active {
+  fill: var(--active-gray);
+}
+
