@@ -80,7 +80,7 @@ a  {
 
 /* features */
 
-.features-list__block {
+.features-list__block--accent {
   background-color: var(--special);
   color: var(--basic-white);
 }
@@ -124,20 +124,20 @@ a  {
   color: var(--basic-black);
 }
 
-.social__btn {
+.social-list__btn {
   background-color: var(--special);
 }
 
-.social__btn:hover,
-.social__btn:focus {
+.social-list__btn:hover,
+.social-list__btn:focus {
   background-color: var(--special-hover);
 }
 
-.social__btn:active {
+.social-list__btn:active {
   background-color: var(--special-active);
 }  
 
-.social__icon:active {
+.social-list__icon:active {
   opacity: 0.3;
 }  
 
