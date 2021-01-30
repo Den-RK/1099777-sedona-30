@@ -85,7 +85,7 @@ a  {
   color: var(--basic-white);
 }
 
-.block__img {
+.features-list__img {
   min-width:800px;
   min-height: 256px;
   background-color: var(--basic-blank);
