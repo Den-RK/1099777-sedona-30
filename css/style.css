@@ -5,6 +5,8 @@
   --basic-black: #000000;
   --basic-white: #fff;
   --basic-brown: #766357;
+  --basic-brown-dark: #604E43;
+  --brown-extra-dark: #503E33;
   --basic-blank:  #70828b;
   --basic-icon-fill: #231F20;
   --special: #81B3D2;
@@ -12,6 +14,8 @@
   --special-active: #5496BD;
   --active-light: #BDBBBC;
   --extra-light: #EEEEEE;
+  --soft-light: #F2F2F2;
+  --soft-dark: #666666;
 }
 
 /* Global */
@@ -113,6 +117,120 @@ a  {
   font-size: 30px;
 }
 
+/* filter */
+
+.filter {
+  background-image: url(../img/background-sedona.jpg);
+  background-color: var(--basic-blank);
+  color: var(--basic-white)
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* results */
+
+.sort ul {
+  list-style: none;
+}
+
+.sort__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.sort__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort-list__link {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.sort-list__link:hover,
+.sort-list__link:focus{
+  color: var(--special);
+  opacity: 1;
+}
+
+.sort-list__link:active {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.results ul {
+  list-style: none;
+}
+
+.results__img {
+  width: 135px;
+  height: 90px;
+  background-color: var(--basic-blank);
+}
+
+.results__link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.results__link:hover,
+.results__link:focus {
+  color: var(--special);
+}
+
+.results__link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.results__type .btn {
+  background-color: var(--special);
+  color: var(--basic-white);
+  font-weight: bold;
+}
+
+.results__type .btn:hover,
+  .results__type .btn:focus{
+  background-color: var(--special-hover);
+}
+
+.results__type .btn:active {
+  background-color: var(--special-active);
+  opacity: 0.3;
+}
+
+.results__cost .btn {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  font-weight: bold;
+}
+
+.results__cost .btn:hover,
+.results__cost .btn:focus {
+  background-color: var(--basic-brown-dark);
+}
+
+.results__cost .btn:active {
+  background-color: var(--brown-extra-dark);
+  opacity: 0.3;
+}
+.results__rate {
+  background-color: var(--soft-light);
+  color: var(--soft-dark);
+}
 /* footer */
 
 .contacts {
@@ -145,14 +263,14 @@ a  {
   line-height: 26px;
 }
 
-.footer-logo__icon {
+.developer__icon {
   fill: var(--basic-icon-fill);
 }
-.footer-logo__icon:hover{
+.developer__icon:hover{
   fill: var(--special);
 }
 
-.footer-logo__icon:active {
+.developer__icon:active {
   fill: var(--active-light);
 }
 
