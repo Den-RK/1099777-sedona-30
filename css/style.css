@@ -196,34 +196,35 @@ a  {
   opacity: 0.3;
 }
 
-.results__type .btn {
-  background-color: var(--special);
+.results__btn {
+
   color: var(--basic-white);
   font-weight: bold;
 }
 
-.results__type .btn:hover,
-  .results__type .btn:focus{
+.results__btn--blue {
+  background-color: var(--special);
+}
+
+.results__btn--brown {
+  background-color: var(--basic-brown);
+}
+.results__btn--blue:hover,
+.results__btn--blue:focus{
   background-color: var(--special-hover);
 }
 
-.results__type .btn:active {
+.results__btn--blue:active {
   background-color: var(--special-active);
   opacity: 0.3;
 }
 
-.results__cost .btn {
-  background-color: var(--basic-brown);
-  color: var(--basic-white);
-  font-weight: bold;
-}
-
-.results__cost .btn:hover,
-.results__cost .btn:focus {
+.results__btn--brown:hover,
+.results__btn--brown:focus {
   background-color: var(--basic-brown-dark);
 }
 
-.results__cost .btn:active {
+.results__btn--brown:active {
   background-color: var(--brown-extra-dark);
   opacity: 0.3;
 }

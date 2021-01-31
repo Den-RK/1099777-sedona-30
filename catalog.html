@@ -22,7 +22,7 @@
     <header class="header">
       <nav class="header__nav">
 
-        <a class="header__logo">
+        <a href="index.html" class="header__logo">
           <img class="header__img" src="img/logo-main.svg" width="138" height="70" alt="Sedona главный логотип">
         </a>
 
@@ -51,61 +51,62 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset>
+          <fieldset class="filter__field">
             <legend>Инфраструктура</legend>
-            <ul>
-              <li class="filter__option">
+            <ul class="filter__list">
+              <li class="filter__item">
                 <input class="filter__input" type="checkbox" id="pool" name="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
-              <li class="filter__option">
+              <li class="filter__item">
                 <input class="filter__input" type="checkbox" id="parking" name="parking">
                 <label for="parking">Парковка</label>
               </li>
-              <li class="filter__option">
+              <li class="filter__item">
                 <input class="filter__input" type="checkbox" id="wifi" name="wifi">
                 <label for="wifi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter__field">
             <legend>Тип жилья</legend>
-            <ul>
-              <li class="filter__option">
+            <ul class="filter__list">
+              <li class="filter__item">
                 <input class="filter__input" type="checkbox" id="hotel" name="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
-              <li class="filter__option">
+              <li class="filter__item">
                 <input class="filter__input" type="checkbox" id="motel" name="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
-              <li class="filter__option">
+              <li class="filter__item">
                 <input class="filter__input" type="checkbox" id="quarters" name="quarters" checked>
                 <label for="quarters">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter__field">
             <legend>Стоимость в сутки (р)</legend>
             <div>
-              <div>
+              <div class="filter__value">
                 <label for="min-price">От</label>
-                <input type="number" id="min-price" name="min-price" value="0">
+                <input class="filter__input" type="number" id="min-price" name="min-price" value="0">
               </div>
 
-              <div>
+              <div class="filter__value">
                 <label for="max-price">До</label>
-                <input type="number" id="max-price" name="max-price" value="3000">
+                <input class="filter__input" type="number" id="max-price" name="max-price" value="3000">
               </div>
 
-              <div>
-                <input type="range" min="0" max="5000" step="1" value="3000" id="range" name="range">
+              <div class="filter__range">
+                <input class="filter__input" type="range" min="0" max="5000" step="1" value="3000" id="range"
+                  name="range">
               </div>
             </div>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="filter__btn" type="submit">Показать</button>
         </form>
       </section>
 
@@ -114,7 +115,7 @@
         <div class="sort">
           <h3 class="sort__title">Найдено: 3</h3>
           <p class="sort__subtitle">Сортировка:</p>
-          <ul>
+          <ul class="sort__list">
             <li class="sort__item">
               <a class="sort__link" href="#">по цене</a>
             </li>
@@ -126,14 +127,14 @@
             </li>
           </ul>
           <div>
-            <button class="btn">Вверх</button>
-            <button class="btn">Вниз</button>
+            <button class="sort__up-btn">Вверх</button>
+            <button class="sort__down-btn">Вниз</button>
           </div>
         </div>
 
         <div class="results">
           <h3 class="visually-hidden">Найденные варианты</h3>
-          <ul>
+          <ul class="results__list">
             <li class="results__item">
               <div class="results__img">
                 <img src="img/amara-resort-and-spa.jpg" width="135" height="90" alt="Amara Resort & SPA">
@@ -145,20 +146,28 @@
                 </a>
                 <div class="results__type">
                   <p>Гостиница</p>
-                  <a class="btn" href="#">Подробнее</a>
+                  <a class="results__btn results__btn--blue" href="#">Подробнее</a>
                 </div>
                 <div class="results__cost">
                   <p>от 4000 Р.</p>
-                  <a class="btn" href="#">Забронировать</a>
+                  <a class="results__btn results__btn--brown" href="#">Забронировать</a>
                 </div>
               </div>
 
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+              <div class="stars">
+                <ul class="stars__list">
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
                 </ul>
                 <p class="results__rate">Рейтинг: 8,5</p>
               </div>
@@ -183,11 +192,17 @@
                 </div>
               </div>
 
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+              <div class="stars">
+                <ul class="stars__list">
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
                 </ul>
                 <p class="results__rate">Рейтинг: 8,9</p>
               </div>
@@ -212,10 +227,14 @@
                 </div>
               </div>
 
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
+              <div class="stars">
+                <ul class="stars__list">
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
+                  <li class="stars__item">
+                    <img src="img/icons/star.svg" alt="Количество звезд">
+                  </li>
                 </ul>
                 <p class="results__rate">Рейтинг: 9,2</p>
               </div>
