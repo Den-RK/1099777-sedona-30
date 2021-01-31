@@ -153,18 +153,18 @@ a  {
   color: var(--basic-black);
 }
 
-.sort-list__link {
+.sort__link {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.sort-list__link:hover,
-.sort-list__link:focus{
+.sort__link:hover,
+.sort__link:focus{
   color: var(--special);
   opacity: 1;
 }
 
-.sort-list__link:active {
+.sort__link:active {
   color: var(--basic-black);
   opacity: 1;
 }
