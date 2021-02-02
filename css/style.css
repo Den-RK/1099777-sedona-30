@@ -16,11 +16,18 @@
   --extra-light: #EEEEEE;
   --soft-light: #F2F2F2;
   --soft-dark: #666666;
+  --opacity-white: rgba(255, 255, 255, 0.9);
 }
 
 /* Global */
+* {
+  box-sizing: border-box;
+}
 
 body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -28,6 +35,18 @@ body {
   color: var(--basic-light-dark);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-content: start;
+
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -38,6 +57,22 @@ img {
 a  {
   text-decoration: none;
 }
+
+.page {
+  height: 100%;
+}
+
+/* header */
+
+.header__logo {
+  order: 1;
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: 1fr 140px 1fr;
+}
+
 /* Navigation */
 
 .header__nav {
@@ -71,11 +106,28 @@ a  {
   height: 509px;
   background-color: var(--basic-blank);
   background-image: url(../img/background-sedona.jpg);
+  margin: 0 auto; 
+  display: grid;
+}
+
+.main-background__img {
+ align-self: center;
+ margin: 0 auto;
+ margin-bottom: 80px;
+}
+
+.main-subtitle {
+  text-align: center;
 }
 
 .main-subtitle__title {
   font-size: 21px;
   line-height: 26px;
+  width: 470px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 16px;
 }
 
 .main-subtitle__text {
@@ -84,9 +136,12 @@ a  {
 
 /* features */
 
+
 .features-list__block--accent {
   background-color: var(--special);
   color: var(--basic-white);
+  width: 400px;
+  height: 256px;;
 }
 
 .features-list__img {
@@ -101,6 +156,7 @@ a  {
 
 .features-list {
   list-style: none;
+  padding: 0;
 }
 
 .features-list--gray {
@@ -111,10 +167,18 @@ a  {
 
 .find {
   line-height: 24px;
+  text-align: center;
+   margin-bottom: 24px;
 }
 .find__title {
   font-weight: bold;
   font-size: 30px;
+}
+
+.find__text {
+  width: 435px;
+  height: 95px;
+  margin: 0 auto;
 }
 
 /* filter */
@@ -234,10 +298,17 @@ a  {
 }
 /* footer */
 
+.footer {
+  background: var(--opacity-white);
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+}
+
 .contacts {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin: 0 auto;
 }
 .contacts__link {
   color: var(--basic-black);
@@ -262,6 +333,7 @@ a  {
 
 .developer {
   line-height: 26px;
+  margin: 0 auto;
 }
 
 .developer__icon {
