@@ -69,7 +69,8 @@ a  {
 .header__logo {
   position: absolute;
   left: 50%;
-  margin-left: -69px;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .nav-list {
@@ -173,11 +174,16 @@ a  {
 .filter {
   background-image: url(../img/background-sedona.jpg);
   background-color: var(--basic-blank);
-  color: var(--basic-white)
+  color: var(--basic-white);
 }
 
-.filter__list {
-  list-style: none;
+.filter__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.filter__field--price {
+  text-align: center;
 }
 
 .filter legend {
@@ -185,6 +191,18 @@ a  {
   font-weight: bold;
 }
 
+.filter__list {
+  list-style: none;
+}
+
+.filter__btn {
+  grid-column-start: 3;
+  width: 137px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+  
 /* results */
 
 .sort__list {
