@@ -66,6 +66,12 @@ a  {
   line-height: 26px;
 }
 
+.header__logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+}
+
 .nav-list {
   list-style: none;
 }
