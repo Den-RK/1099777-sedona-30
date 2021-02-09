@@ -109,11 +109,11 @@ a  {
 /* background */
 
 .main-background {
-  width: 1200px;
-  height: 509px;
   background-color: var(--basic-blank);
   background-image: url(../img/background-sedona.jpg);
- text-align: center;
+  text-align: center;
+  width: 1200px;
+  height: 509px;
 }
 
 .main-background__img {
@@ -154,21 +154,21 @@ a  {
 }
 
 .inner-list__item {
-  width: 400px;
-  height: 256px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-.features-list__block {
   width: 400px;
   height: 256px;
+}
+.features-list__block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background-color: var(--extra-light)
+  width: 400px;
+  height: 256px;
 }
 
 .features-list__block--accent {
@@ -179,9 +179,9 @@ a  {
 }
 
 .features-list__img {
+  background-color: var(--basic-blank);
   min-width:800px;
   min-height: 256px;
-  background-color: var(--basic-blank);
 }
 .features-list__title {
   font-size: 21px;
@@ -196,13 +196,13 @@ a  {
 }
 
 .inner-list__item {
-  width: 400px;
-  height: 256px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 400px;
+  height: 256px;
 }
 /* find */
 
