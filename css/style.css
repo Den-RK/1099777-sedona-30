@@ -17,6 +17,7 @@
   --soft-light: #F2F2F2;
   --soft-dark: #666666;
   --opacity-white: rgba(255, 255, 255, 0.9);
+  --border: #E5E5E5;
 }
 
 /* Global */
@@ -304,6 +305,11 @@ a  {
 
 .sort__btns {
 display: flex;
+margin-left: auto;
+}
+
+.results {
+  border-top: 1px solid var(--border);
 }
 
 .results__list {
@@ -316,7 +322,8 @@ display: flex;
 
 .results__item {
   display: flex;
-
+  border-bottom: 1px solid var(--border);
+ margin-top: 24px;
 }
 
 .results__img {
@@ -406,6 +413,12 @@ display: flex;
 .results__btn--brown:active {
   background-color: var(--brown-extra-dark);
   opacity: 0.3;
+}
+
+.stars {
+    display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .stars__list {
