@@ -426,18 +426,25 @@ margin-left: auto;
 .stars__list {
   display: flex;
   list-style: none;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .results__rate {
-  display: flex;
+  background-color: var(--soft-light);
+  width: 110px;
+  min-height: 27px;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 3px;
+  
+  /* display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--soft-light);
   color: var(--soft-dark);
   width: 110px;
   height: 27px;
-  margin-left: auto;
+  margin-left: auto; */
 }
 /* footer */
 
@@ -467,7 +474,7 @@ margin-left: auto;
 .social-list {
   list-style: none;
   display: flex;
-  padding: 0;
+  margin: 0;
 }
 
 .social-list__item {
