@@ -128,7 +128,6 @@ a  {
   height: 57px;
   left: 0;
   bottom: -1px;
-  
 }
 
 .main-background__img {
@@ -216,10 +215,11 @@ a  {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   width: 400px;
-  height: 330px;
+  min-height: 330px;
+  padding: 160px 55px 80px;
 }
 
 .inner-list__item:first-child .inner-list__title::before {
