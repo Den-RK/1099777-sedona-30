@@ -18,6 +18,7 @@
   --soft-dark: #666666;
   --opacity-white: rgba(255, 255, 255, 0.9);
   --border: #E5E5E5;
+  --toggle: #ababab;
 }
 
 /* Global */
@@ -280,11 +281,11 @@ a  {
 /* filter */
 
 .filter {
+  position: relative;
   background-image: url(../img/background-sedona.jpg);
   background-color: var(--basic-blank);
   color: var(--basic-white);
   margin-bottom: 29px;
-  
 }
 
 .filter__form {
@@ -292,6 +293,47 @@ a  {
   grid-template-columns: 1fr 1fr 2fr;
 }
 
+.filter__field {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+.filter__item {
+  margin-bottom: 25px;
+  margin-left: 72px;
+}
+
+.filter__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+}
+
+.filter__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/checkbox-off.svg);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  left: -38px;
+  top: 0;
+}
+
+.filter__input--checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/checkbox-on.svg);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  left: -38px;
+  top: 0;
+}
 .filter__field--price {
   text-align: center;
 }
@@ -310,6 +352,80 @@ a  {
   width: 137px;
   position: relative;
 } 
+
+.range-filter {
+  width: 317px;
+  margin: 10px auto;
+  
+}
+
+.range-controls {
+  margin-top: 33px;
+  position: relative;
+}
+
+.range-controls__scale {
+  height: 2px;
+  background: var(--basic-white);
+  opacity: 0.3;
+}
+
+.range-controls__bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls__toggle {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background: var(--toggle);
+  border-radius:50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls__toggle--max {
+  left: 240px;
+}
+
+.price-controls {
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  min-height: 36px;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.price-controls__input {
+  background: none;
+  border: none;
+  color: var(--basic-white);
+  padding: 0;
+  width: 50px;
+  margin-left: 5px;
+}
+
+.filter__btn {
+  position: absolute;
+  bottom: 10px;
+  right: 230px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  width: 137px;
+  height: 36px;
+  background: none;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  padding: 7px 35px 7;
+}
   
 /* results */
 

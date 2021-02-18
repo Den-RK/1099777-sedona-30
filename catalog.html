@@ -45,7 +45,7 @@
     </header>
 
     <main class="container">
-      <h1>Каталог гостиниц Седоны</h1>
+      <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -55,15 +55,18 @@
             <legend>Инфраструктура</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <input class="filter__input" type="checkbox" id="pool" name="pool" checked>
+                <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="pool"
+                  name="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="filter__item">
-                <input class="filter__input" type="checkbox" id="parking" name="parking">
+                <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="parking"
+                  name="parking">
                 <label for="parking">Парковка</label>
               </li>
               <li class="filter__item">
-                <input class="filter__input" type="checkbox" id="wifi" name="wifi">
+                <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="wifi"
+                  name="wifi">
                 <label for="wifi">Wi-fi</label>
               </li>
             </ul>
@@ -73,15 +76,18 @@
             <legend>Тип жилья</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <input class="filter__input" type="checkbox" id="hotel" name="hotel" checked>
+                <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="hotel"
+                  name="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="filter__item">
-                <input class="filter__input" type="checkbox" id="motel" name="motel" checked>
+                <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="motel"
+                  name="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li class="filter__item">
-                <input class="filter__input" type="checkbox" id="quarters" name="quarters" checked>
+                <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="quarters"
+                  name="quarters" checked>
                 <label for="quarters">Апартаменты</label>
               </li>
             </ul>
@@ -89,7 +95,26 @@
 
           <fieldset class="filter__field filter__field--price">
             <legend>Стоимость в сутки (р)</legend>
-            <div>
+
+            <div class="range-filter">
+
+              <div class="price-controls">
+                <label class="price-controls__min-price" for="min-price">От</label>
+                <input class="price-controls__input" type="number" id="min-price" name="min-price" value="0">
+                <label class="price-controls__max-price" for="max-price">До</label>
+                <input class="price-controls__input" type="number" id="max-price" name="max-price" value="3000">
+              </div>
+
+              <div class="range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__toggle range-controls__toggle--min"></div>
+                <div class="range-controls__toggle range-controls__toggle--max"></div>
+              </div>
+
+            </div>
+            <!-- <div>
               <div class="filter__value">
                 <label for="min-price">От</label>
                 <input class="filter__input" type="number" id="min-price" name="min-price" value="0">
@@ -104,7 +129,7 @@
                 <input class="filter__input" type="range" min="0" max="5000" step="1" value="3000" id="range"
                   name="range">
               </div>
-            </div>
+            </div> -->
             <button class="filter__btn" type="submit">Показать</button>
           </fieldset>
 
