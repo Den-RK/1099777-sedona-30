@@ -109,8 +109,8 @@
                 <div class="range-controls__scale">
                   <div class="range-controls__bar"></div>
                 </div>
-                <div class="range-controls__toggle range-controls__toggle--min"></div>
-                <div class="range-controls__toggle range-controls__toggle--max"></div>
+                <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
+                <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
               </div>
 
             </div>
@@ -153,8 +153,20 @@
             </li>
           </ul>
           <div class="sort__btns">
-            <button class="sort__up-btn">Вверх</button>
-            <button class="sort__down-btn">Вниз</button>
+            <button class="sort__up-btn">
+
+              <svg class="sort__btns--icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" />
+              </svg>
+
+            </button>
+            <button class="sort__down-btn">
+              <svg class="sort__btns--icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" />
+              </svg>
+            </button>
           </div>
         </div>
 
