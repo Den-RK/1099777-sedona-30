@@ -290,7 +290,13 @@ a  {
 
 .filter__form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+
+.filter__field:nth-child(2){
+  margin-right: 300px;
 }
 
 .filter__field {
@@ -480,6 +486,7 @@ a  {
   color: var(--basic-black);
   opacity: 0.3;
   margin-right: 32px; 
+  border-bottom: 1px dotted var(--basic-black);
 }
 
 .sort__link:hover,
@@ -504,16 +511,23 @@ margin-left: auto;
   background: none; 
 }
 
-.sort__btns--icon {
+.sort__up-btn--icon {
   fill: var(--basic-gray);
 }
 
-.sort__btns--icon:hover,
-.sort__btns--icon:focus { 
+.sort__down-btn--icon {
+  fill: var(--special);
+}
+
+.sort__up-btn--icon:hover,
+.sort__up-btn--icon:focus,
+.sort__down-btn--icon:hover,
+.sort__down-btn--icon:focus { 
   fill: var(--basic-black);
 }
 
-.sort__btns--icon:active {
+.sort__up-btn--icon:active,
+.sort__down-btn--icon:active {
   fill: var(--special);
 
 }
@@ -533,6 +547,8 @@ margin-left: auto;
   display: flex;
   border-bottom: 1px solid var(--border);
   margin-bottom: 24px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .results__img {
