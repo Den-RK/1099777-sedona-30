@@ -52,7 +52,7 @@
         <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="filter__field">
-            <legend>Инфраструктура</legend>
+            <legend class="filter__legend">Инфраструктура</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="pool"
@@ -73,7 +73,7 @@
           </fieldset>
 
           <fieldset class="filter__field">
-            <legend>Тип жилья</legend>
+            <legend class="filter__legend">Тип жилья</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <input class="visually-hidden filter__input--checkbox filter__input" type="checkbox" id="hotel"
@@ -94,15 +94,19 @@
           </fieldset>
 
           <fieldset class="filter__field filter__field--price">
-            <legend>Стоимость в сутки (р)</legend>
+            <legend class="filter__legend filter__legend--range">Стоимость в сутки (р):</legend>
 
             <div class="range-filter">
 
               <div class="price-controls">
-                <label class="price-controls__min-price" for="min-price">От</label>
-                <input class="price-controls__input" type="number" id="min-price" name="min-price" value="0">
-                <label class="price-controls__max-price" for="max-price">До</label>
-                <input class="price-controls__input" type="number" id="max-price" name="max-price" value="3000">
+
+                <label class="price-controls__min-price" for="min-price">От
+                  <input class="price-controls__input" type="text" id="min-price" name="min-price" value="0">
+                </label>
+
+                <label class="price-controls__max-price" for="max-price">До
+                  <input class="price-controls__input" type="text" id="max-price" name="max-price" value="3000">
+                </label>
               </div>
 
               <div class="range-controls">
@@ -114,22 +118,6 @@
               </div>
 
             </div>
-            <!-- <div>
-              <div class="filter__value">
-                <label for="min-price">От</label>
-                <input class="filter__input" type="number" id="min-price" name="min-price" value="0">
-              </div>
-
-              <div class="filter__value">
-                <label for="max-price">До</label>
-                <input class="filter__input" type="number" id="max-price" name="max-price" value="3000">
-              </div>
-
-              <div class="filter__range">
-                <input class="filter__input" type="range" min="0" max="5000" step="1" value="3000" id="range"
-                  name="range">
-              </div>
-            </div> -->
             <button class="filter__btn" type="submit">Показать</button>
           </fieldset>
 
