@@ -135,7 +135,7 @@ a  {
 }
 
 .main-background__img {
- margin-top: 35px;
+ margin-top: 80px;
 }
 
 .main-subtitle {
@@ -154,6 +154,7 @@ a  {
 
 .main-subtitle__text {
   line-height: 26px;
+  margin-bottom: 54px;
 }
 
 /* features */
@@ -206,6 +207,9 @@ a  {
 .features-list__title {
   font-size: 21px;
   font-weight: bold;
+  width: 160px;
+  min-height: 43px;
+  margin: 0 auto;
 }
 
 .inner-list {
@@ -215,6 +219,10 @@ a  {
   flex-wrap: wrap;
 }
 
+.inner-list p{ 
+  margin-top: 0;
+  margin-bottom: 28px;
+}
 .inner-list__item {
   position: relative;
   display: flex;
@@ -223,7 +231,7 @@ a  {
   text-align: center;
   width: 400px;
   min-height: 330px;
-  padding: 160px 55px 80px;
+  padding: 160px 55px 55px;
 }
 
 .inner-list__item:first-child .inner-list__title::before {
