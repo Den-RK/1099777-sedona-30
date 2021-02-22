@@ -75,6 +75,8 @@ a  {
 
 .header {
   position: relative;
+  padding-right: 72px;
+  padding-left: 72px;
 }
 
 .header__nav {
@@ -94,8 +96,16 @@ a  {
 .nav-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
+  
+}
+
+.nav-list__item {
+  padding: 14px 0;
+  width: 229px;
 }
 
 .nav-list__link {
@@ -312,16 +322,17 @@ a  {
   background: var(--basic-white);
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 14px;
   font-weight: bold;
   padding-left: 55px;
   padding-right: 55px;
+  /* transform: translateY(-100%);
+  transition: transform .3s; */
+
 }
 
-.find__label {
-  mr
-}
 
 .find__input {
   width: 346px;
@@ -329,6 +340,31 @@ a  {
   border: none;
   background: var(--soft-light);
   margin-bottom: 29px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-black);  
+}
+
+.find__input--date { 
+  padding-left: 13px;
+  margin-left: 15px;
+}
+
+.find__input--adult,
+.find__input--children {
+  text-align: center;
+  width: 114px;
+}
+
+.find__input--adult {
+  margin-right: 53px;
+  margin-left: 35px;
+}
+
+.find__label--children {
+  margin-bottom: 55px;
+  margin-left: 20px;
 }
 
 .find__search {
@@ -340,8 +376,9 @@ a  {
   font-weight: bold;
   color: var(--basic-white);
   margin: 0 auto;
+  padding: 16px 181px;
 }
-.map {
+.map__frame {
   position: relative;
 }
 

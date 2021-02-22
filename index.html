@@ -134,23 +134,27 @@
           седоне</p>
         <button class="find__btn" type="button">Поиск гостиницы в Седоне</button>
         <form class="find__form" action="#">
-          <label class="find__label" for="entering">Дата заезда:
-            <input class="find__input" type="text" name="entering" id="entering" placeholder="24 апреля 2017">
+          <label class="find__label find__label--date" for="entering">Дата заезда:
+            <input class="find__input find__input--date" type="text" name="entering" id="entering"
+              value="24 апреля 2017">
           </label>
-          <label class="find__label for=" departure">Дата выезда:
-            <input class="find__input" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+          <label class="find__label find__label--date" for="departure">Дата выезда:
+            <input class="find__input find__input--date" type="text" name="departure" id="departure"
+              value="4 июля 2017">
           </label>
-          <label class="find__label for=" adult">Взрослые:
-            <input class="find__input" type="text" name="adult" id="adult" value="1" size="1">
+          <label class="find__label find__label--adult" for="adult">Взрослые:
+            <input class="find__input find__input--adult" type="text" name="adult" id="adult" value="1" size="1">
           </label>
-          <label class="find__label for=" children">Взрослые:
-            <input class="find__input" type="text" name="children" id="children" value="1" size="1">
+          <label class="find__label  find__label--children" for="children">Дети:
+            <input class="find__input find__input--children" type="text" name="children" id="children" value="1"
+              size="1">
           </label>
           <a class="find__search" href="catalog.html">Найти</a>
         </form>
       </section>
       <section class="map">
-        <iframe
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe class="map__frame"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A75c8a0e8b94f08e56c4273238506f93ea4bb7fcb3426dcc9eb134ebc5e318561&amp;source=constructor"
           width="1200" height="594" frameborder="0"></iframe>
       </section>
