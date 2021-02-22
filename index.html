@@ -74,19 +74,16 @@
 
             <ul class="inner-list">
               <li class="inner-list__item">
-                <!-- <img class="inner-list__icon" src="img/icons/home-icon.svg" alt="Дом" height="75" width="72"> -->
                 <h3 class="features-list__title inner-list__title">Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
 
               <li class="inner-list__item">
-                <!-- <img class="inner-list__icon" src="img/icons/burger-icon.svg" alt="Бургер>" height="75" width="72"> -->
                 <h3 class="features-list__title inner-list__title">Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
 
               <li class="inner-list__item">
-                <!-- <img class="inner-list__icon" src="img/icons/present-icon.svg" alt="Сувениры" height="75" width="72"> -->
                 <h3 class="features-list__title inner-list__title">Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
@@ -133,9 +130,29 @@
       <section class="find">
         <h2 class="visually-hidden">Забронировать гостиницу</h2>
         <p class="find__title">Заинтересовались?</p>
-        <p class="find__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        <p class="find__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="find__btn" type="button">Поиск гостиницы в Седоне</button>
+        <form class="find__form" action="#">
+          <label class="find__label" for="entering">Дата заезда:
+            <input class="find__input" type="text" name="entering" id="entering" placeholder="24 апреля 2017">
+          </label>
+          <label class="find__label for=" departure">Дата выезда:
+            <input class="find__input" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+          </label>
+          <label class="find__label for=" adult">Взрослые:
+            <input class="find__input" type="text" name="adult" id="adult" value="1" size="1">
+          </label>
+          <label class="find__label for=" children">Взрослые:
+            <input class="find__input" type="text" name="children" id="children" value="1" size="1">
+          </label>
+          <a class="find__search" href="catalog.html">Найти</a>
+        </form>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A75c8a0e8b94f08e56c4273238506f93ea4bb7fcb3426dcc9eb134ebc5e318561&amp;source=constructor"
+          width="1200" height="594" frameborder="0"></iframe>
       </section>
     </main>
 
@@ -152,7 +169,6 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__btn" href="#">
-              <!-- <span>Twitter</span> -->
               <svg class="social-list__icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -164,7 +180,6 @@
 
           <li class="social-list__item">
             <a class="social-list__btn" href="#">
-              <!-- <span>Facebook</span> -->
               <svg class="social-list__icon" width="12" height="22" viewBox="0 0 12 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
@@ -174,7 +189,6 @@
 
           <li class="social-list__item">
             <a class="social-list__btn" href="#">
-              <!-- <span>Youtube</span> -->
               <svg class="social-list__icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"

@@ -168,6 +168,10 @@ a  {
   padding: 0;
 }
 
+.features-list {
+  margin-bottom: 55px;
+}
+
 .features-list__item {
   display: flex;
   flex-wrap: wrap;
@@ -210,6 +214,7 @@ a  {
   width: 160px;
   min-height: 43px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .inner-list {
@@ -231,7 +236,7 @@ a  {
   text-align: center;
   width: 400px;
   min-height: 330px;
-  padding: 160px 55px 55px;
+  padding: 160px 55px 47px;
 }
 
 .inner-list__item:first-child .inner-list__title::before {
@@ -276,7 +281,7 @@ a  {
 .find {
   line-height: 24px;
   text-align: center;
-   margin-bottom: 24px;
+   /* margin-bottom: 24px; */
 }
 .find__title {
   font-weight: bold;
@@ -287,6 +292,57 @@ a  {
   width: 435px;
   height: 95px;
   margin: 0 auto;
+}
+
+.find__btn {
+  width: 568px;
+  height: 86px;
+  border: none;
+  background-color: var(--basic-brown);
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-white);
+  margin-bottom: 55px;
+}
+
+.find__form {
+  width: 568px;
+  height: 395px;
+  background: var(--basic-white);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.find__label {
+  mr
+}
+
+.find__input {
+  width: 346px;
+  height: 38px;
+  border: none;
+  background: var(--soft-light);
+  margin-bottom: 29px;
+}
+
+.find__search {
+  width: 458px;
+  height: 58px;
+  background: var(--special);
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-white);
+  margin: 0 auto;
+}
+.map {
+  position: relative;
 }
 
 /* filter */
@@ -735,6 +791,7 @@ margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  z-index: 1;
 }
 
 .contacts {
