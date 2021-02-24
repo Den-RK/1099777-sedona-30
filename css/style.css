@@ -17,6 +17,7 @@
   --active-light: #BDBBBC;
   --extra-light: #EEEEEE;
   --soft-light: #F2F2F2;
+  --soft-light-hover: #EBEBEB;
   --soft-dark: #666666;
   --opacity-white: rgba(255, 255, 255, 0.9);
   --border: #E5E5E5;
@@ -373,6 +374,9 @@ text-align: right;
   font-weight: bold;
   color: var(--basic-black);  
 }
+.find__input:hover{
+  background: var(--soft-light-hover);
+}
 
 .find__input:focus{
   border: 2px solid #E5E5E5;
@@ -705,6 +709,7 @@ opacity: 1;
 .sort__link:active {
   color: var(--basic-black);
   opacity: 1;
+  border: none;
 }
 
 .sort__btns {
@@ -786,6 +791,15 @@ margin-left: auto;
   font-size: 21px;
 }
 
+.results__title:hover,
+.results__title:focus {
+  color: var(--special);
+}
+
+.results__title:active {
+  opacity: 0.3;
+}
+
 .results__link:hover,
 .results__link:focus {
   color: var(--special);
@@ -824,6 +838,26 @@ margin-left: auto;
   min-width: 110px;
   min-height: 27px;
   padding: 3px 16px;
+}
+
+.results__type .results__btn:hover,
+.results__type .results__btn:focus{
+  background: var(--special-hover);
+}
+
+.results__type .results__btn:active {
+  background: var(--special-active);
+  color: var(--basic-white-opacity);
+}
+
+.results__cost .results__btn:hover,
+.results__cost .results__btn:focus{
+  background-color: var(--basic-brown-dark);
+}
+
+.results__cost .results__btn:active {
+  background-color: var(--brown-extra-dark);
+  color: var(--basic-white-opacity);
 }
 
 .results__type .results__btn {
