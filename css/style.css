@@ -217,6 +217,7 @@ text-align: right;
   background-color: var(--extra-light);
   width: 400px;
   height: 256px;
+  padding: 50px 47px;
 }
 
 .features-list__block--accent {
@@ -238,7 +239,6 @@ text-align: right;
   width: 160px;
   min-height: 43px;
   margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 .inner-list {
@@ -311,6 +311,8 @@ text-align: right;
 .find__title {
   font-weight: bold;
   font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .find__text {
@@ -344,7 +346,7 @@ text-align: right;
 
 .find__form {
   width: 568px;
-  height: 395px;
+  min-height: 395px;
   background: var(--basic-white);
   margin: auto;
   display: flex;
@@ -372,7 +374,8 @@ text-align: right;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--basic-black);  
+  color: var(--basic-black); 
+  
 }
 .find__input:hover{
   background: var(--soft-light-hover);
@@ -393,6 +396,7 @@ text-align: right;
   text-align: center;
   width: 114px;
   position: relative;
+
 }
 
 .find__input--adult {
