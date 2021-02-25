@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/favicon152.svg" type="image/svg+xml">
@@ -54,19 +54,17 @@
           alt="Добро пожаловать в Седону">
       </section>
 
-      <section class="main-subtitle">
-        <h2 class="main-subtitle__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="main-subtitle__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-
       <section class="features">
-        <h2 class="visually-hidden">Преимущества поездки в Седону</h2>
+        <div class="features__description-row">
+          <h2 class="features__description--title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="features__description--text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
         <ol class="features-list">
           <li class="features-list__item features-list__item--large">
             <div class="features-list__block features-list__block--accent">
               <h3 class="features-list__title">Настоящий городок</h3>
-              <p>-№1-</p>
+              <p>— №1 —</p>
               <p>Седона - не аттракцион для туристов, там
                 течёт своя жизнь</p>
             </div>
@@ -93,7 +91,7 @@
             <img class="features-list__img" src="img/devil-bridge.jpg" width="800" height="256" alt="Мост дьявола">
             <div class="features-list__block features-list__block--accent">
               <h3 class="features-list__title">Там есть <br> Мост дьявола</h3>
-              <p>-№2-</p>
+              <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если конечно
                 вы осмелитесь</p>
             </div>
@@ -103,7 +101,7 @@
           <li class="features-list__item">
             <div class="features-list__block">
               <h3 class="features-list__title">Небольшая площадь</h3>
-              <p>-№3-</p>
+              <p>— №3 —</p>
               <p>все достопримечательности <br> находятся очень близко</p>
             </div>
           </li>
@@ -111,7 +109,7 @@
           <li class="features-list__item">
             <div class="features-list__block">
               <h3 class="features-list__title">Красивая дорога</h3>
-              <p>-№4-</p>
+              <p>— №4 —</p>
               <p>ехать в седону из лас-вегаса совсем <br> не скучно!</p>
             </div>
           </li>
@@ -119,7 +117,7 @@
           <li class="features-list__item">
             <div class="features-list__block">
               <h3 class="features-list__title">мало туристов</h3>
-              <p>-№5-</p>
+              <p>— №5 —</p>
               <p>большинство едет в гранд каньон <br> и толпится там</p>
             </div>
           </li>
@@ -135,20 +133,86 @@
         <button class="find__btn" type="button"><span>Поиск гостиницы в Седоне</span></button>
         <form class="find__form" action="#">
           <label class="find__label find__label--date" for="entering">Дата заезда:
-            <input class="find__input find__input--date" type="text" name="entering" id="entering"
-              value="24 апреля 2017">
+            <div class="find__input--area">
+              <input class="find__input find__input--date" type="text" name="entering" id="entering"
+                value="24 апреля 2017">
+              <button class="btn__input--date">
+                <svg class="btn__svg--icon" width="21" height="23" viewBox="0 0 21 23" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" />
+                </svg>
+
+              </button>
+            </div>
           </label>
           <label class="find__label find__label--date" for="departure">Дата выезда:
-            <input class="find__input find__input--date" type="text" name="departure" id="departure"
-              value="4 июля 2017">
+            <div class="find__input--area">
+              <input class="find__input find__input--date" type="text" name="departure" id="departure"
+                value="4 июля 2017">
+              <button class="btn__input--date">
+                <svg class="btn__svg--icon" width="21" height="23" viewBox="0 0 21 23" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" />
+                </svg>
+
+              </button>
+            </div>
           </label>
-          <label class="find__label find__label--adult" for="adult">Взрослые:
-            <input class="find__input find__input--adult" type="text" name="adult" id="adult" value="1" size="1">
-          </label>
-          <label class="find__label  find__label--children" for="children">Дети:
-            <input class="find__input find__input--children" type="text" name="children" id="children" value="1"
-              size="1">
-          </label>
+          <div class="find__range">
+
+
+
+            <label class="find__label find__label--adult" for="adult">Взрослые:
+              <div class="find__range--input">
+                <button class="btn__svg--minus" type=" submit">
+                  <svg class="btn__svg--icon" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3" />
+                  </svg>
+                </button>
+
+                <input class="find__input find__input--adult" type="number" name="adult" id="adult" value="2" size="1">
+
+                <button class="btn__svg--plus" type="submit">
+                  <svg class="btn__svg--icon" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+                  </svg>
+                </button>
+              </div>
+            </label>
+
+
+
+            <label class="find__label  find__label--children" for="children">Дети:
+              <div class="find__range--input">
+                <button class="btn__svg--minus" type=" submit">
+                  <svg class="btn__svg--icon" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3" />
+                  </svg>
+                </button>
+
+                <input class="find__input find__input--children" type="number" name="children" id="children" value="0"
+                  size="1">
+
+                <button class="btn__svg--plus" type="submit">
+                  <svg class="btn__svg--icon" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </div>
           <a class="find__search" href="catalog.html">Найти</a>
         </form>
       </section>
