@@ -173,14 +173,14 @@ text-align: right;
 }
 
 .main-background__img {
- margin-top: 80px;
+  margin-top: 80px;
 }
 
 .features__description-row {
   text-align: center;
 }
 
-.features__description--title {
+.features__title {
   font-size: 21px;
   line-height: 26px;
   width: 470px;
@@ -190,7 +190,7 @@ text-align: right;
   margin-bottom: 16px;
 }
 
-.features__description--text {
+.features__text {
   line-height: 26px;
   margin-bottom: 54px;
 }
