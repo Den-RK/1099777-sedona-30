@@ -159,6 +159,7 @@ text-align: right;
    width: 1200px;
    height: 509px;
    position: relative;
+   margin-bottom: 42px;
 }
 
 .main-background::before {
@@ -186,7 +187,6 @@ text-align: right;
    width: 470px;
    height: 80px;
    margin: 0 auto;
-   margin-top: 42px;
    margin-bottom: 16px;
 }
 
