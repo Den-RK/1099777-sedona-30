@@ -209,11 +209,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   padding: 0;
 }
 
-/*
-.features-list {
-  margin-bottom: 55px;
-} */
-
 .features-list__item {
   display: flex;
   flex-wrap: wrap;
@@ -539,10 +534,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   padding-left: 72px;
 }
 
-/* .filter__field:nth-child(2){
-   margin-right: 230px;
-} */
-
 .filter__field {
   margin: 0;
   padding: 0;
@@ -676,7 +667,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 .range-controls__toggle:hover, .range-controls__toggle:focus {
   width: 5px;
   height: 5px;
-  ;
   border: 10px solid var(--basic-white);
   top: -24px;
 }
@@ -784,7 +774,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .sort__link {
   color: var(--basic-black-opacity);
-  /* opacity: 0.3; */
   margin-right: 32px;
   border-bottom: 1px dotted var(--special);
   font-size: 12px;
@@ -1046,7 +1035,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 .social-list {
   list-style: none;
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
