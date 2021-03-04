@@ -442,8 +442,9 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .btn__svg--minus {
   position: absolute;
-  top: 9px;
-  left: 7px;
+  top: 0px;
+  left: 6px;
+  height: 100%;
   z-index: 5;
   border: none;
   background: none;
@@ -452,8 +453,9 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .btn__svg--plus {
   position: absolute;
-  top: 12px;
-  right: 8px;
+  top: 3px;
+  right: 6px;
+  height: 100%;
   z-index: 5;
   border: none;
   background: none;
@@ -462,10 +464,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .btn__svg--icon {
   fill: var(--special-gray);
-}
-
-.btn__svg--icon-minus {
-  margin-bottom: 2px;
 }
 
 .btn__svg--minus:hover .btn__svg--icon, .btn__svg--minus:focus .btn__svg--icon, .btn__svg--plus:focus .btn__svg--icon, .btn__svg--plus:hover .btn__svg--icon {
@@ -566,6 +564,12 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   cursor: pointer;
   user-select: none;
   text-align: left;
+}
+
+.filter__input:focus+label::before {
+  border-color: var(--basic-black);
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter__input--checkbox+label::before {
@@ -1006,7 +1010,7 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  padding: 0 73px 35px 73px;
+  padding: 0 73px 23px 73px;
 }
 
 .contacts {
