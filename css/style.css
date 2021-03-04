@@ -384,12 +384,10 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   height: 38px;
   border: none;
   background: var(--soft-light);
-  /* margin-bottom: 29px; */
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--basic-black);
-  outline: none;
 }
 
 .find__input:hover {
@@ -464,6 +462,10 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .btn__svg--icon {
   fill: var(--special-gray);
+}
+
+.btn__svg--icon-minus {
+  margin-bottom: 2px;
 }
 
 .btn__svg--minus:hover .btn__svg--icon, .btn__svg--minus:focus .btn__svg--icon, .btn__svg--plus:focus .btn__svg--icon, .btn__svg--plus:hover .btn__svg--icon {
