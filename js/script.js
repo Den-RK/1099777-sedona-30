@@ -6,10 +6,12 @@ const children = document.querySelector('.find__input--children');
 const searchButton = document.querySelector('.find__search');
 
 let isStorageSupport = true;
-let storage = "";
+let storageAdult = "";
+let storageChildren = "";
 
 try {
-  storage = localStorage.getItem('adult');
+  storageAdult = localStorage.getItem('adult');
+  storageChildren = localStorage.getItem('children');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -17,8 +19,11 @@ try {
 findButton.addEventListener('click', function () {
   findForm.classList.toggle('find__form--hidden');
 
-  if (storage) {
-    adult.value = storage;
+  if (storageAdult) {
+    adult.value = storageAdult;
+  }
+  if (storageChildren) {
+    children.value = storageChildren;
   }
   findDate.focus();
 
@@ -30,6 +35,7 @@ findForm.addEventListener('click', function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem('adult', adult.value);
+      localStorage.setItem('children', children.value);
     }
   }
 })
