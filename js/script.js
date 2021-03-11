@@ -1,13 +1,14 @@
-const findButton = document.querySelector('.find__btn');
-const findForm = document.querySelector('.find__form--hidden');
-const entering = document.querySelector('[name=entering]');
-const departure = document.querySelector('[name=departure');
-const adult = document.querySelector('[name=adult]');
-const children = document.querySelector('[name=children]');
+const find = document.querySelector('.find')
+const findButton = find.querySelector('.find__btn');
+const findForm = find.querySelector('.find__form--hidden');
+const findEntering = findForm.querySelector('[name=entering]');
+const findDeparture = findForm.querySelector('[name=departure');
+const findAdult = findForm.querySelector('[name=adult]');
+const findChildren = findForm.querySelector('[name=children]');
 
 let isStorageSupport = true;
-let storageAdult = "";
-let storageChildren = "";
+let storageAdult = '';
+let storageChildren = '';
 
 try {
   storageAdult = localStorage.getItem('adult');
@@ -19,15 +20,15 @@ try {
 findButton.addEventListener('click', function () {
   findForm.classList.toggle('find__form');
   if (storageAdult) {
-    adult.value = storageAdult;
+    findAdult.value = storageAdult;
   }
   if (storageChildren) {
-    children.value = storageChildren;
+    findChildren.value = storageChildren;
   }
 })
 
 findForm.addEventListener('submit', function (evt) {
-  if (!entering.value || !departure.value || !adult.value || !children.value) {
+  if (!findEntering.value || !findDeparture.value || !findAdult.value || !findChildren.value) {
     evt.preventDefault();
     findForm.classList.add('find__search--err');
     findForm.addEventListener('animationend', function () {
@@ -36,11 +37,10 @@ findForm.addEventListener('submit', function (evt) {
   }
   else {
     if (isStorageSupport) {
-      localStorage.setItem('adult', adult.value);
-      localStorage.setItem('children', children.value);
+      localStorage.setItem('adult', findAdult.value);
+      localStorage.setItem('children', findChildren.value);
     }
   }
-
 })
 
 
