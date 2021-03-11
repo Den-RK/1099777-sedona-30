@@ -1,6 +1,6 @@
 const find = document.querySelector('.find')
 const findButton = find.querySelector('.find__btn');
-const findForm = find.querySelector('.find__form--hidden');
+const findForm = find.querySelector('.find__form');
 const findEntering = findForm.querySelector('[name=entering]');
 const findDeparture = findForm.querySelector('[name=departure');
 const findAdult = findForm.querySelector('[name=adult]');
@@ -18,7 +18,7 @@ try {
 }
 
 findButton.addEventListener('click', function () {
-  findForm.classList.toggle('find__form');
+  findForm.classList.toggle('find__form--hidden');
   if (storageAdult) {
     findAdult.value = storageAdult;
   }

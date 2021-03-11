@@ -375,25 +375,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   color: var(--basic-white-opacity);
 }
 
-.find__form--hidden {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 568px;
-  min-height: 395px;
-  font-size: 14px;
-  font-weight: bold;
-  position: absolute;
-  top: 290px;
-  left: 316px;
-  padding: 40px 55px 55px 55px;
-  margin: auto;
-  transform: translateY(-100%);
-  transition: transform .1s;
-  background: var(--basic-white);
-}
-
 .find__form {
   display: flex;
   flex-wrap: wrap;
@@ -409,9 +390,15 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   padding: 40px 55px 55px 55px;
   margin: auto;
   transform: translateY(0%);
-  transition: transform .5s;
+  transition: transform 0.5s;
   background: var(--basic-white);
 }
+
+.find__form--hidden {
+  transform: translateY(-100%);
+}
+
+
 
 .find__input {
   width: 346px;
