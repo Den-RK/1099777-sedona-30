@@ -531,14 +531,17 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 }
 
 .map {
-  z-index: -1;
-}
-
-.map__frame {
+  width: 1200px;
+  height: 594px;
+  z-index: 0;
   position: relative;
+  background-color: var(--basic-blank);
 }
 
 .map__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
   border: none;
 }
 
