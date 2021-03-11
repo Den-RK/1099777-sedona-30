@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/favicon152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/favicon180.png">
@@ -112,7 +112,6 @@
           </li>
         </ol>
       </section>
-
       <section class="find">
         <div class="find__wrapper">
           <h2 class="visually-hidden">Забронировать гостиницу</h2>
@@ -121,11 +120,11 @@
             Седоне</p>
           <button class="find__btn" type="button"><span>Поиск гостиницы в Седоне</span></button>
         </div>
-        <form class="find__form" action="#">
+        <form class="find__form--hidden" action="#">
           <label class="find__label find__label--date" for="entering">Дата заезда:</label>
           <div class="find__input--area">
             <input class="find__input find__input--date" type="text" name="entering" id="entering"
-              placeholder="24 апреля 2017" required>
+              value="24 апреля 2017">
             <button aria-label="Выбрать дату заезда" class="btn__input--date" type="button">
               <svg aria-hidden="true" focusable="false" class="btn__svg--icon" width="21" height="23"
                 viewbox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +139,7 @@
           <label class="find__label find__label--date" for="departure">Дата выезда:</label>
           <div class="find__input--area">
             <input class="find__input find__input--date" type="text" name="departure" id="departure"
-              placeholder="4 июля 2017" required>
+              value="4 июля 2017">
             <button aria-label="Выбрать дату выезда" class="btn__input--date" type="button">
               <svg aria-hidden="true" focusable="false" class="btn__svg--icon" width="21" height="23"
                 viewbox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,8 +161,7 @@
                 </svg>
               </button>
 
-              <input class="find__input find__input--adult" type="number" name="adult" id="adult" placeholder="2"
-                required>
+              <input class="find__input find__input--adult" type="number" name="adult" id="adult" value="2">
 
               <button aria-label="Увеличить количество" class="btn__svg--plus" type="button">
                 <svg aria-hidden="true" focusable="false" class="btn__svg--icon" width="11" height="11"
@@ -183,8 +181,7 @@
                 </svg>
               </button>
 
-              <input class="find__input find__input--children" type="number" name="children" id="children"
-                placeholder="0" required>
+              <input class="find__input find__input--children" type="number" name="children" id="children" value="0">
 
               <button aria-label="Увеличить количество" class="btn__svg--plus" type="button">
                 <svg aria-hidden="true" focusable="false" class="btn__svg--icon" width="11" height="11"
@@ -264,7 +261,7 @@
       </section>
     </footer>
   </div>
-  <script src="./js/script.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

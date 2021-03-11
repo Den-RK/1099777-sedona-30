@@ -202,7 +202,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .features {
   position: relative;
-  padding-bottom: 41px;
   z-index: 5;
   background: var(--basic-white);
 }
@@ -213,6 +212,7 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   grid-column: 1 / -1;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .features-list__item {
@@ -337,6 +337,7 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   position: relative;
   z-index: 4;
   background: var(--basic-white);
+  padding-top: 55px;
 }
 
 .find__title {
@@ -374,6 +375,25 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   color: var(--basic-white-opacity);
 }
 
+.find__form--hidden {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 568px;
+  min-height: 395px;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 290px;
+  left: 316px;
+  padding: 40px 55px 55px 55px;
+  margin: auto;
+  transform: translateY(-100%);
+  transition: transform .1s;
+  background: var(--basic-white);
+}
+
 .find__form {
   display: flex;
   flex-wrap: wrap;
@@ -384,18 +404,13 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   font-size: 14px;
   font-weight: bold;
   position: absolute;
-  top: 235px;
+  top: 290px;
   left: 316px;
   padding: 40px 55px 55px 55px;
   margin: auto;
   transform: translateY(0%);
-  transition: transform .3s;
+  transition: transform .5s;
   background: var(--basic-white);
-}
-
-.find__form--hidden {
-  transform: translateY(-100%);
-  transition: transform .3s;
 }
 
 .find__input {
@@ -406,10 +421,6 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   text-transform: uppercase;
   font-weight: bold;
   background: var(--soft-light);
-}
-
-.find__input::placeholder {
-  color: var(--basic-black);
 }
 
 .find__input:hover {
@@ -517,6 +528,10 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   border: none;
   background: var(--special);
   cursor: pointer;
+}
+
+.find__search--err {
+  animation: shake 0.6s;
 }
 
 .find__search:hover, .find__search:focus {
@@ -1124,4 +1139,26 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
 
 .developer__icon:active {
   fill: var(--active-light);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

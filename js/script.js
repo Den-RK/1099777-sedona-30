@@ -1,9 +1,9 @@
 const findButton = document.querySelector('.find__btn');
-const findForm = document.querySelector('.find__form');
-const findDate = document.querySelector('.find__input--date');
-const adult = document.querySelector('.find__input--adult');
-const children = document.querySelector('.find__input--children');
-const searchButton = document.querySelector('.find__search');
+const findForm = document.querySelector('.find__form--hidden');
+const entering = document.querySelector('[name=entering]');
+const departure = document.querySelector('[name=departure');
+const adult = document.querySelector('[name=adult]');
+const children = document.querySelector('[name=children]');
 
 let isStorageSupport = true;
 let storageAdult = "";
@@ -17,27 +17,30 @@ try {
 }
 
 findButton.addEventListener('click', function () {
-  findForm.classList.toggle('find__form--hidden');
-
+  findForm.classList.toggle('find__form');
   if (storageAdult) {
     adult.value = storageAdult;
   }
   if (storageChildren) {
     children.value = storageChildren;
   }
-  findDate.focus();
-
 })
 
-findForm.addEventListener('click', function (evt) {
-  if (!findDate.value || !adult.value || !children.value) {
+findForm.addEventListener('submit', function (evt) {
+  if (!entering.value || !departure.value || !adult.value || !children.value) {
     evt.preventDefault();
-  } else {
+    findForm.classList.add('find__search--err');
+    findForm.addEventListener('animationend', function () {
+      findForm.classList.remove('find__search--err');
+    })
+  }
+  else {
     if (isStorageSupport) {
       localStorage.setItem('adult', adult.value);
       localStorage.setItem('children', children.value);
     }
   }
+
 })
 
 
