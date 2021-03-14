@@ -84,8 +84,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
-  appearance: none;
   -moz-appearance: textfield;
+  appearance: none;
 }
 
 /* Navigation */
@@ -204,6 +204,7 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
   position: relative;
   z-index: 5;
   background: var(--basic-white);
+  counter-reset: section; 
 }
 
 .features-list, .inner-list {
