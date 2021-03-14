@@ -17,7 +17,8 @@ try {
   isStorageSupport = false;
 }
 
-findButton.addEventListener('click', function () {
+findButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
   findForm.classList.toggle('find__form--hidden');
   if (storageAdult) {
     findAdult.value = storageAdult;
