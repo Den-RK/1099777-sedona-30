@@ -372,6 +372,7 @@ input[type="number"]:focus {
 }
 
 .find__btn {
+  display: block;
   width: 568px;
   height: 86px;
   border: none;
@@ -382,6 +383,8 @@ input[type="number"]:focus {
   background-color: var(--basic-brown);
   cursor: pointer;
   padding-top: 30px;
+  margin: 0 auto;
+
 }
 
 .find__btn:hover,
