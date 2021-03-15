@@ -10,6 +10,8 @@ let isStorageSupport = true;
 let storageAdult = '';
 let storageChildren = '';
 
+findForm.classList.add('find__form--hidden');
+
 try {
   storageAdult = localStorage.getItem('adult');
   storageChildren = localStorage.getItem('children');
