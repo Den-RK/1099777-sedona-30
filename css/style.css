@@ -385,10 +385,8 @@ a {
   font-weight: bold;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  cursor: pointer;
-  padding-top: 30px;
+  cursor: pointer;;
   margin: 0 auto;
-
 }
 
 .find__btn:hover,
