@@ -377,7 +377,7 @@ a {
 .find__btn {
   display: block;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   border: none;
   font-size: 21px;
   line-height: 26px;
